@@ -143,7 +143,7 @@ h4 {
   background-color:transparent;
 }
 .label-default {
-  background-color:#dddddd;
+  background-color: lightgoldenrodyellow;
   color: gray;
 }
 .page-header {
@@ -169,6 +169,19 @@ small.text-muted {
 
 .btn-danger {
     margin-left: 5px;
+    background-color: maroon;
+}
+
+.btn-primary {
+  background-color: navy;
+}
+
+.btn-default {
+  background-color: lightgray;
+}
+
+.btn-warning {
+  background-color: darkorange;
 }
 
 .nav {
@@ -183,7 +196,9 @@ small.text-muted {
     margin-top: 80px;
 }
 
-.nav-large {
-    font-size: 35px;
+.navbar-default {
+  font-size: 35px;
+  color: white;
+  background-color: #222222;
 }
 

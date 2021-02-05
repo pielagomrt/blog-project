@@ -1,5 +1,6 @@
 class Article < ApplicationRecord
-    validates :heading, presence: true
+    validates :heading, presence: true,
+                        length: { maximum: 50 }
 
     validates :subheading, presence: true
 

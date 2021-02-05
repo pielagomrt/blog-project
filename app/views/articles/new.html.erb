@@ -1,33 +1,33 @@
 <div class="container masthead">
-<%= form_with method: :post, scope: :article, url: article_create_path, local: true do |f| %>
-  <p>
-    <% if @article.errors.any? %>
-      <ul>
-        <% @article.errors.full_messages.each do |message| %>
-          <li class= "text-danger list-unstyled">ERROR : <%= message %></li>
-        <% end %>
-      </ul> 
-    <% end %> 
-  </p>
-  </br>
-  <div class="form-floating mb-3">
-    <label for="floatingInput"><%= f.label :heading %></label><br/>
-    <%= f.text_field :heading, class: 'form-control' %>
-  </div>
-  </br>
-  <div class="form-floating">
-    <label for="floatingInput"><%= f.label :subheading %></label><br/>
-    <%= f.text_field :subheading, class: 'form-control' %>
-  </div>
-  </br>
-  <div class="form-group">
-    <label for="comment"><%= f.label :body %></label>
-    <%= f.text_area :body, class: 'form-control', size: '40x10', id: 'comment' %>
-  </div>
-  </br>
-  <p>
-      <%= f.submit "Post", class: 'btn btn-primary' %>
-      <%= link_to 'Go Back', articles_path, class: 'btn btn-default pull-right' %>
-  </p>
-<% end %>
+  <%= form_with method: :post, scope: :article, url: article_create_path, local: true do |f| %>
+    <p>
+      <% if @article.errors.any? %>
+        <ul>
+          <% @article.errors.full_messages.each do |message| %>
+            <li class= "text-danger list-unstyled">ERROR : <%= message %></li>
+          <% end %>
+        </ul> 
+      <% end %> 
+    </p>
+    </br>
+    <div class="form-floating mb-3">
+      <label for="floatingInput"><%= f.label :heading %></label><br/>
+      <%= f.text_field :heading, class: 'form-control' %>
+    </div>
+    </br>
+    <div class="form-floating">
+      <label for="floatingInput"><%= f.label :subheading %></label><br/>
+      <%= f.text_field :subheading, class: 'form-control' %>
+    </div>
+    </br>
+    <div class="form-group">
+      <label for="comment"><%= f.label :body %></label>
+      <%= f.text_area :body, class: 'form-control', size: '40x10', id: 'comment' %>
+    </div>
+    </br>
+    <p>
+        <%= f.submit "Post", class: 'btn btn-primary' %>
+        <%= link_to 'Go Back', articles_path, class: 'btn btn-default pull-right' %>
+    </p>
+  <% end %>
 </div>
