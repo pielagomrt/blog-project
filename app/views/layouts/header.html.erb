@@ -1,0 +1,17 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand nav-large" href="#">BLOG APP</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <span>
+          <%= link_to 'Home', articles_path, class: 'navbar-brand' %>
+        </span>
+        <span>
+          <%= link_to 'Create Blog', articles_new_path, class: 'btn btn-success' %>
+        </span>
+      </li>
+    </ul>
+  </div>
+</nav>
